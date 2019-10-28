@@ -64,11 +64,15 @@ void load_DFA_table()
  */
  int i,j;
  char c;
-    scanf("%d", &N_DFA_states);
-    scanf("%d", &N_symbols); 
-    scanf(" %s ",DFA_finals);
-    for(i=0;i<N_DFA_states;i++){
-    for(j=0;j<N_symbols;j++){
+ printf("Enter the no.of Dfa states: ");
+ scanf("%d", &N_DFA_states);
+ printf("\nEnter the no.of input symbols: ");
+ scanf("%d", &N_symbols); 
+  printf("\nEnter final states: ");
+ scanf(" %s",DFA_finals);
+  for(i=0;i<N_DFA_states;i++){
+  for(j=0;j<N_symbols;j++){
+ printf("Enter the state of Transition from %c on input symbol %d :",i+'A',j);
     scanf(" %c",&c);
     DFAtab[i][j] =(int)c;
     }
