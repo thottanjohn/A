@@ -36,9 +36,11 @@ else
 stk[i]=a[j];
 stk[i+1]='\0';
 a[j]=' ';
+check();
 printf("\n$%s\t%s$\t%ssymbols",stk,a,act);
 }
 }
+check();
 if(strlen(stk)==1){
     printf("\n Parsing Successful");
 }
